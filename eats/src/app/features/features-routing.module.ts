@@ -4,6 +4,7 @@ import { BusinessregComponent } from './businessreg/businessreg.component';
 import { ConsumerregComponent } from './consumerreg/consumerreg.component';
 import { HomeComponent } from './home/home.component';
 import { SelectoptionComponent } from './selectoption/selectoption.component';
+import { SigninComponent } from './signin/signin.component';
 
 const routes: Routes = [
   {path: '',
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'reg-business',
     component: BusinessregComponent
+  },
+  {
+    path: 'signin',
+    component: SigninComponent
   }
 ];
 
