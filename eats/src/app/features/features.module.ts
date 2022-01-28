@@ -10,10 +10,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SigninComponent } from './signin/signin.component';
+import { AddMystereatBoxComponent } from './add-mystereat-box/add-mystereat-box.component';
+import { EatboxheaderComponent } from './eatboxheader/eatboxheader.component';
+import { StoreComponent } from './store/store.component';
+import { StoreinfoComponent } from './storeinfo/storeinfo.component';
+import { StorelistpageComponent } from './storelistpage/storelistpage.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, SelectoptionComponent, ConsumerregComponent, BusinessregComponent, HeaderComponent, FooterComponent, SigninComponent],
+  declarations: [HomeComponent, SelectoptionComponent, ConsumerregComponent, BusinessregComponent, HeaderComponent, FooterComponent, SigninComponent, AddMystereatBoxComponent, EatboxheaderComponent, StoreComponent, StoreinfoComponent, StorelistpageComponent],
   imports: [
     CommonModule,
     FormsModule, ReactiveFormsModule,

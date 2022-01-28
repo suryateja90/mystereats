@@ -1,0 +1,49 @@
+<app-eatboxheader></app-eatboxheader>
+
+<div class="col_sm1">
+    <div class="top2">
+        <div class="market" *ngFor="let item of form">
+            <div class="head">
+                <h1>Hello, Best Market</h1>
+                <p>add mystereat box</p>
+                <input type="text" name="search" [(ngModel)]="item.boxName" placeholder="Mystereat Box Name">
+            </div>
+            <div *ngFor="let val of item.week">
+            <div class="working_main">
+                <h1>Working Days - Pickup TIme - Quantity</h1>
+                <div class="working_box">
+                    <div class="working_days">
+                        <input type="checkbox" name="" [(ngModel)]="val.check"> <span>{{val.name}}</span>
+                    </div>
+                    <div class="working_details">
+                        <div class="w_list" *ngFor="let x of val.pickupTime; let i = index;">
+                            <div class="time">
+                                <p><i class="fa fa-clock-o" aria-hidden="true"></i> Pickup Time : <input type="text" name="" [(ngModel)]="x.from"> <span>to</span> <input type="text" name="" [(ngModel)]="x.to"></p>
+                            </div>
+                            <div class="qty">
+                                <p><i class="fa fa-cube" aria-hidden="true"></i> Qty : <input type="text" name="" [(ngModel)]="x.qty"></p>
+                            </div>
+                            <div class="add" *ngIf="i==0">
+                                <i class="fa fa-plus-square" aria-hidden="true" (click)="addPickTime(val.pickupTime)"></i>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            </div>
+            <div class="select_wor">
+                <h1><input type="checkbox" name="" [(ngModel)]="item.autoWeekFill"> <span>Auto-fill whole week</span></h1>
+                <h2><input type="checkbox" name="" [(ngModel)]="item.autoMonthFill"> <span>Auto-fill whole Month</span></h2>
+                <div class="clear"></div>
+            </div>
+            <div class="box_btn">
+                <a (click)="addBox()">ADD BOX</a>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<app-footer></app-footer>
