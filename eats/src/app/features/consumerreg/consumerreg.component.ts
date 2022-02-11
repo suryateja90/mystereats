@@ -23,7 +23,7 @@ export class ConsumerregComponent implements OnInit {
       {
         firstName: ['', Validators.required, Validators.minLength(6),
         Validators.maxLength(20)],
-        surName: [''],
+        lastName: [''],
         mobileNo: [''],
         address: [''],
         email: ['', [Validators.required, Validators.email]],

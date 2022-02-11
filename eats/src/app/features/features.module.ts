@@ -15,10 +15,11 @@ import { EatboxheaderComponent } from './eatboxheader/eatboxheader.component';
 import { StoreComponent } from './store/store.component';
 import { StoreinfoComponent } from './storeinfo/storeinfo.component';
 import { StorelistpageComponent } from './storelistpage/storelistpage.component';
+import { YourBasketComponent } from './your-basket/your-basket.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, SelectoptionComponent, ConsumerregComponent, BusinessregComponent, HeaderComponent, FooterComponent, SigninComponent, AddMystereatBoxComponent, EatboxheaderComponent, StoreComponent, StoreinfoComponent, StorelistpageComponent],
+  declarations: [HomeComponent, SelectoptionComponent, ConsumerregComponent, BusinessregComponent, HeaderComponent, FooterComponent, SigninComponent, AddMystereatBoxComponent, EatboxheaderComponent, StoreComponent, StoreinfoComponent, StorelistpageComponent, YourBasketComponent],
   imports: [
     CommonModule,
     FormsModule, ReactiveFormsModule,

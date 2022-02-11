@@ -8,7 +8,9 @@ import { map } from 'rxjs/operators';
 })
 export class CrudoperationService {
 
-  constructor(public http: HttpClient, public base: string) { }
+  base = 'http://13.58.221.117:3000';
+
+  constructor(public http: HttpClient) { }
 
   save(methodName: any, pl: any): Observable<any> {
     return this.http.post(this.base + methodName, pl).pipe(
